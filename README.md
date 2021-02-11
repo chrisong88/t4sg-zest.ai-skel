@@ -16,6 +16,19 @@ pip install flask python-dotenv
 pip install -U flask-cors
 ```
 
+Then, create your .env file:
+
+```
+touch .env
+```
+
+Open the .env file with your favorite editor and add the following configurations:
+
+```
+FLASK_APP=app.py
+FLASK_ENV=development
+```
+
 ## Execution ##
 
 In order to run the web server, you will need two open terminals, one to run the react app and one to run the flask server. The React app is the main app that you interact with as a user, and it makes calls to the Flask server in the backend using the useEffect hook. 
